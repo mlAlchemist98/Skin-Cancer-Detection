@@ -26,9 +26,9 @@ if file:
     # write classification
     percentage = confidence_score * 100
 
-    if percentage > 90.0:
+    if percentage > 70.0:
         st.write(f"### С вероятностью в {percentage:.2f}% данный участок кожи поражен злокачественной меланомой")
-    elif percentage < 10.0:
+    elif percentage < 30.0:
         st.write(f"### С вероятностью в {percentage:.2f}% на данном участке кожи нет злокачественной меланомы")
     else:
         st.write("### По данному снимку невозможно определить наличие опухоли либо изображение не содержит снимок МРТ")
